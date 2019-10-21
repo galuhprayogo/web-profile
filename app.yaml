@@ -1,10 +1,13 @@
 runtime: php55
 
 handlers:
-- url: /styles
+- url: /css
   static_dir: css
+- url: /fonts
 static_dir: fonts
+- url: /js
 static_dir: js
+- url: /scss
 static_dir: scss
   
 - url: /images/(.*\.(gif|png|jpg))
@@ -13,4 +16,5 @@ static_dir: scss
   
 - url: /.*
   script: single.php
+- url: /.*
 script: index.php
